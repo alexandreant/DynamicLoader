@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <ImageView
+        android:id="@+id/head_image"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9.3dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/othercontact_icon" />
+
+    <TextView
+        android:id="@+id/uin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15.3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_toRightOf="@+id/head_image"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uin"
+        android:layout_marginLeft="15.3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_toRightOf="@+id/head_image"
+        android:singleLine="true"
+        android:textColor="@color/content_grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/uin"
+        android:layout_alignBottom="@id/uin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/time_grey" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@id/head_image"
+        android:layout_marginTop="8dp"
+        android:background="@color/list_diveder_grey"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+</RelativeLayout>
